@@ -1,0 +1,30 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cppbuild",
+			"label": "G++",
+			"command": "W:/env/mingw64/bin/g++.exe",
+			"args": [
+				"-fdiagnostics-color=always",
+				"-g",
+				"${file}",
+				"-o",
+				"${fileDirname}\\${fileBasenameNoExtension}.exe",
+				"-I",
+				"W:/env/vcpkg/installed/x64-mingw-dynamic/include",
+				"-L",
+				"W:/env/vcpkg/installed/x64-mingw-dynamic/lib",
+				"-ljsoncpp",
+			],
+			"options": {
+				"cwd": "W:/env/mingw64/bin"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build",
+			"detail": "compiler: W:/env/mingw64/bin/g++.exe"
+		}
+	]
+}
